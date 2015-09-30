@@ -1,11 +1,11 @@
 var dotenv = require("dotenv"),
-	dotenv.load(),
-	http = require("http"),
+    dotenv.load(),
+    http = require("http"),
     util = require("util"),
     beep = require("beepbeep"),
     PushBullet = require("pushbullet"),
     pusher = new PushBullet(process.env.pushbulletkey),
-	cron = require("cron");
+    cron = require("cron");
 
 
 // setup pushbullet devices
@@ -35,7 +35,7 @@ pusher.devices(pushOptions, function(err, response) {
 });
 
 var sendAlert = function sendAlert(flag, devices, extra) {
-	var params = extra || null;
+    var params = extra || null;
     for (var device of devices) {
         if (flag === 1) {
             pusher.note(device, "PATCH ALERT", "yo the patch notes are probably out", function(err, response) {

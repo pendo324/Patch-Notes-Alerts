@@ -4,6 +4,8 @@ A *very* simple node.js program to alert you when new Dota 2 patch notes drop
 ## Use
 
 ```npm install```
+
+
 ```node check.js```
 
 ### Planned

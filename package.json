@@ -1,0 +1,24 @@
+{
+  "name": "dota2-ihl",
+  "version": "0.0.1",
+  "dependencies": {
+    "pushbullet": ">=1.4.3",
+    "cron": "*>=1.0.9",
+    "beepbeep": ">=1.2.0",
+    "dotenv": ">=1.2.0"
+  },
+  "readmeFilename": "README.md",
+  "description": "A *very* simple node.js program to alert you when new Dota 2 patch notes drop",
+  "main": "web.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pendo324/Patch-Notes-Alerts"
+  },
+  "keywords": [
+    "steam",
+    "valve",
+    "dota"
+  ],
+  "author": "pendo324",
+  "license": "MIT",
+}
